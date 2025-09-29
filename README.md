@@ -39,7 +39,7 @@ Antes de começar, certifique-se de que seu ambiente na VPS (Hetzner, etc.) aten
 
 1.  **Docker e Docker Swarm inicializado**: O Docker deve estar instalado e o modo Swarm ativado (`docker swarm init`).
 2.  **Traefik rodando como um serviço Swarm**: Você já deve ter o Traefik configurado e implantado no seu cluster Swarm.
-3.  **Uma rede Docker externa e "attachable"**: O Traefik precisa de uma rede compartilhada para se comunicar com os serviços que ele expõe. Geralmente, essa rede é chamada de `web` ou `traefik-public`. O nome `network_public` é usado nos exemplos abaixo.
+3.  **Uma rede Docker externa e "attachable"**: O Traefik precisa de uma rede compartilhada para se comunicar com os serviços que ele expõe. O nome `network_public` é usado nos exemplos abaixo.
     ```bash
     # Exemplo de como criar a rede, caso ainda não exista
     docker network create --driver=overlay --attachable network_public
@@ -48,13 +48,48 @@ Antes de começar, certifique-se de que seu ambiente na VPS (Hetzner, etc.) aten
 
 ### Passos para o Deploy
 
-#### Passo 1: Clone o Repositório e Prepare os Arquivos
+#### Passo 1: Clone o Repositório e Crie os Arquivos Docker
 
-Siga os passos de 1 a 4 do guia anterior para clonar o repositório e criar o `Dockerfile` e o arquivo de configuração do `nginx`.
+1.  **Clone o repositório** na sua VPS:
+    ```bash
+    git clone https://github.com/seu-usuario/nextengine.git
+    cd nextengine
+    ```
+2.  **Crie o `Dockerfile`**:
+    Crie um arquivo chamado `Dockerfile` (sem extensão) na raiz do projeto e adicione o seguinte conteúdo. Ele usa um *multi-stage build* para criar uma imagem otimizada.
+    ```dockerfile
+    # Estágio 1: Construir a aplicação com Node.js e Vite
+    FROM node:20-alpine AS builder
+    WORKDIR /app
+    COPY package*.json ./
+    RUN npm install
+    COPY . .
+    RUN npm run build
+
+    # Estágio 2: Servir a aplicação com Nginx
+    FROM nginx:stable-alpine
+    COPY --from=builder /app/dist /usr/share/nginx/html
+    COPY nginx.conf /etc/nginx/conf.d/default.conf
+    EXPOSE 80
+    CMD ["nginx", "-g", "daemon off;"]
+    ```
+3.  **Crie a configuração do Nginx**:
+    Crie um arquivo chamado `nginx.conf` na raiz do projeto. Ele é essencial para que o roteamento da sua SPA (Single Page Application) funcione corretamente.
+    ```nginx
+    server {
+      listen 80;
+      root /usr/share/nginx/html;
+      index index.html;
+
+      location / {
+        try_files $uri $uri/ /index.html;
+      }
+    }
+    ```
 
 #### Passo 2: Construa a Imagem Docker
 
-É uma boa prática usar versões específicas em vez de `:latest`.
+Agora que o `Dockerfile` existe, você pode construir a imagem. É uma boa prática usar versões específicas.
 
 ```bash
 # O -t define o nome e a tag da imagem (nome:tag)
@@ -63,7 +98,7 @@ docker build -t nextengine:1.1 .
 
 #### Passo 3: Implante o "Stack"
 
-Com a imagem `nextengine:1.1` criada localmente, podemos implantar o stack.
+Com a imagem `nextengine:1.1` criada localmente na sua VPS, podemos implantar o stack.
 
 ```bash
 docker stack deploy -c docker-compose.yml nextengine
@@ -72,7 +107,7 @@ docker stack deploy -c docker-compose.yml nextengine
 -   `-c docker-compose.yml`: Especifica o arquivo de composição.
 -   `nextengine`: É o nome que daremos ao nosso "stack" (conjunto de serviços).
 
-O Swarm agora irá garantir que o serviço esteja sempre rodando. O Traefik detectará as labels, solicitará o certificado SSL (via HTTP ou DNS, dependendo da sua configuração) e começará a rotear o tráfego.
+O Swarm agora irá garantir que o serviço esteja sempre rodando. O Traefik detectará as labels, solicitará o certificado SSL e começará a rotear o tráfego para seu site.
 
 ### Manutenção e Atualizações
 
