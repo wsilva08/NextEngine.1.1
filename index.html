@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Engine - Agentes de IA e Automação Inteligente</title>
+    <meta name="description" content="Especialistas na criação de agentes de IA personalizados para automatizar processos, aumentar a produtividade e impulsionar resultados excepcionais para o seu negócio.">
+    <meta name="keywords" content="Agentes de IA, Automação Inteligente, Next Engine, Inteligência Artificial, Automação de Processos, Produtividade, Consultoria IA">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Next Engine">
+    <link id="favicon" rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "vite": "https://aistudiocdn.com/vite@^7.1.5"
+  }
+}
+</script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#hero" class="logo">
+                    <img src="data:image/svg+xml,%3Csvg height='40' viewBox='0 0 215 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad-ne' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%2300BFA6'/%3E%3Cstop offset='1' stop-color='%232563EB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 0 V36 H8 L22 0 H30 V36 H22 L8 0 H0Z' fill='url(%23grad-ne)'/%3E%3Cpath d='M35 0 V36 H60 V28 H43 V22 H58 V14 H43 V8 H60 V0 H35Z' fill='url(%23grad-ne)'/%3E%3Ctext fill='%23FFFFFF' font-family='Poppins, sans-serif' font-size='24' font-weight='700' x='75' y='28'%3ENext Engine%3C/text%3E%3C/svg%3E" alt="Next Engine Logo" class="logo-icon">
+                </a>
+
+                <div id="nav-menu" class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#mission">Missão & Visão</a></li>
+                        <li><a href="#services">Nossos Serviços</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="https://www.linkedin.com/company/nextengine" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                              <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.705-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.931c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/nextengineoficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.011 7.053.069 2.59.284.284 2.59.069 7.053.011 8.333 0 8.74 0 12s.011 3.667.069 4.947c.215 4.46 2.52 6.765 6.984 6.984 1.28.058 1.687.069 4.947.069s3.667-.011 4.947-.069c4.46-.215 6.765-2.52 6.984-6.984.058-1.28.069-1.687.069-4.947s-.011-3.667-.069-4.947C21.716 2.59 19.41.284 14.947.069 13.667.011 13.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-primary" data-modal-trigger="contact">Contato</a>
+                    </div>
+                </div>
+                 <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transforme seu negócio com <span class="highlight">Agentes de IA</span></h1>
+                    <p>Especialistas em criação de agentes inteligentes que automatizam processos, aumentam produtividade e impulsionam resultados excepcionais.</p>
+                    <a href="#" class="btn btn-secondary" data-modal-trigger="contact">Solicitar consultoria <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="value-prop" class="value-prop">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Potencialize seu Negócio com Inteligência Artificial</h2>
+                    <p>Vamos além da automação. Criamos soluções de IA que se tornam parceiros estratégicos para o seu crescimento.</p>
+                </div>
+                <div class="value-prop-grid">
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg></div>
+                        <h3>Soluções Sob Medida</h3>
+                        <p>Desenvolvemos agentes de IA únicos, alinhados precisamente com os desafios e objetivos do seu negócio.</p>
+                    </div>
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 6-4 6h8l-4 6"/><path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z"/></svg></div>
+                        <h3>Eficiência e Produtividade</h3>
+                        <p>Automatize tarefas repetitivas, libere sua equipe para focar no que é estratégico e veja sua produtividade decolar.</p>
+                    </div>
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+                        <h3>Inovação Contínua</h3>
+                        <p>Acesse o que há de mais moderno em tecnologia de IA, mantendo sua empresa sempre à frente da concorrência.</p>
+                    </div>
+                    <div class="value-prop-card">
+                        <div class="value-prop-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <h3>Parceria Estratégica</h3>
+                        <p>Oferecemos suporte completo, desde a implementação até a otimização, garantindo o máximo retorno sobre o investimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission">
+            <section class="mission">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Nossa Essência</h2>
+                        <p>O que nos move e para onde olhamos. Nossa missão é o nosso propósito; nossa visão é o nosso futuro.</p>
+                    </div>
+                    <div class="mission-grid">
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                            </div>
+                            <h3>Nossa Missão</h3>
+                            <p>Democratizar o acesso à inteligência artificial, capacitando empresas de todos os portes a automatizar processos, otimizar operações e alcançar um crescimento sustentável por meio de soluções inovadoras e personalizadas.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </div>
+                            <h3>Nossa Visão</h3>
+                            <p>Ser a consultoria líder em agentes de IA e automação na América Latina, reconhecida por transformar o cenário tecnológico dos nossos clientes, impulsionando um futuro onde a colaboração entre humanos e IA gera valor excepcional.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="why-us" class="why-us">
+                <div class="container why-us-container">
+                    <div class="why-us-content">
+                        <h2>Por que escolher a <span class="highlight">Next Engine?</span></h2>
+                        <p>Nossa expertise em IA e automação garante resultados mensuráveis, combinando conhecimento técnico, segurança e suporte dedicado.</p>
+                        <ul>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Aumento da precisão e qualidade dos resultados</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Disponibilidade 24/7 dos agentes automatizados</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Escalabilidade para atender ao crescimento do seu negócio</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Acesso a tecnologias de ponta em IA e automação</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Treinamento e capacitação da equipe para uso das novas ferramentas</li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-secondary" data-modal-trigger="contact">Agendar demonstração <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p>Oferecemos soluções completas em inteligência artificial e automação para revolucionar a forma como sua empresa opera e compete no mercado.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                        <h3>Desenvolvimento de agentes de IA</h3>
+                        <p>Criamos agentes inteligentes personalizados para automatizar processos específicos do seu negócio.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2a1 1 0 0 0 1 1h2"/><path d="M9 13v2a1 1 0 0 1-1 1H6"/></svg></div>
+                        <h3>Automação Inteligente</h3>
+                        <p>Implementamos soluções de automação que aprendem e se adaptam às necessidades da sua empresa.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                        <h3>Consultoria Estratégica</h3>
+                        <p>Analisamos seu negócio e identificamos oportunidades para implementação de IA de forma eficiente.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                        <h3>Otimização de Processos</h3>
+                        <p>Utilizamos tecnologia de IA para aumentar produtividade e reduzir custos em processos existentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cases" class="cases">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cases de uso por Setor</h2>
+                    <p>Veja como nossos agentes de IA podem ser aplicados em diferentes nichos de mercado para otimizar operações e melhorar a experiência do cliente.</p>
+                </div>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l3-8 3 8c-2 1-4 1-6 0z"/><path d="M2 16l3-8 3 8c-2 1-4 1-6 0z"/><path d="M12 2v20"/><path d="M12 6h10"/><path d="M12 6H2"/></svg></div>
+                        <h3>Advocacia Digital</h3>
+                        <ul>
+                           <li><b>Atendimento inicial:</b> chatbot para responder dúvidas comuns de clientes.</li>
+                           <li><b>Escritórios:</b> organização automática de prazos em agenda.</li>
+                           <li><b>Documentos:</b> geração de minutas ou contratos simples.</li>
+                        </ul>
+                    </div>
+                    <div class="case-card">
+                         <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                        <h3>Mercado Imobiliário Inteligente</h3>
+                         <ul>
+                           <li><b>Corretores:</b> resposta automática a interessados em anúncios.</li>
+                           <li><b>Imobiliárias:</b> agendamento de visitas sem intervenção humana.</li>
+                           <li><b>Clientes:</b> comparador rápido de valores de imóveis semelhantes.</li>
+                        </ul>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                        <h3>RH & Recrutamento Inteligente</h3>
+                         <ul>
+                           <li><b>Seleção:</b> triagem automática de currículos.</li>
+                           <li><b>Entrevistas:</b> chatbot para perguntas iniciais aos candidatos.</li>
+                           <li><b>Onboarding:</b> lembrete de treinamentos e tarefas para novos colaboradores.</li>
+                        </ul>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+                        <h3>E-commerce & Varejo Otimizado</h3>
+                         <ul>
+                           <li><b>Atendimento ao cliente:</b> chatbot para suporte 24/7.</li>
+                           <li><b>Recomendações:</b> sugestões personalizadas de produtos.</li>
+                           <li><b>Logística:</b> automação do rastreamento de pedidos e gestão de estoque.</li>
+                        </ul>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+                        <h3>Saúde & Clínicas Otimizadas</h3>
+                        <ul>
+                           <li><b>Triagem inicial:</b> chatbot para coletar sintomas e direcionar pacientes.</li>
+                           <li><b>Agendamentos:</b> confirmação e reagendamento automático de consultas.</li>
+                           <li><b>Pós-consulta:</b> envio automatizado de orientações e lembretes.</li>
+                        </ul>
+                    </div>
+                     <div class="case-card">
+                        <div class="case-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+                        <h3>Educação & Treinamento Personalizado</h3>
+                        <ul>
+                           <li><b>Tutoria virtual:</b> assistentes de IA para tirar dúvidas de alunos 24/7.</li>
+                           <li><b>Gestão de cursos:</b> automação de matrículas e comunicação com alunos.</li>
+                           <li><b>Conteúdo adaptativo:</b> criação de trilhas de aprendizado personalizadas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                     <a href="#hero" class="logo">
+                        <img src="data:image/svg+xml,%3Csvg height='40' viewBox='0 0 215 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad-ne' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%2300BFA6'/%3E%3Cstop offset='1' stop-color='%232563EB'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 0 V36 H8 L22 0 H30 V36 H22 L8 0 H0Z' fill='url(%23grad-ne)'/%3E%3Cpath d='M35 0 V36 H60 V28 H43 V22 H58 V14 H43 V8 H60 V0 H35Z' fill='url(%23grad-ne)'/%3E%3Ctext fill='%23FFFFFF' font-family='Poppins, sans-serif' font-size='24' font-weight='700' x='75' y='28'%3ENext Engine%3C/text%3E%3C/svg%3E" alt="Next Engine Logo" class="logo-icon">
+                    </a>
+                    <p>Potencializando negócios com automação e agentes de IA de última geração.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/company/nextengine" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                              <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.705-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.931c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/nextengineoficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.74 0 8.333.011 7.053.069 2.59.284.284 2.59.069 7.053.011 8.333 0 8.74 0 12s.011 3.667.069 4.947c.215 4.46 2.52 6.765 6.984 6.984 1.28.058 1.687.069 4.947.069s3.667-.011 4.947-.069c4.46-.215 6.765-2.52 6.984-6.984.058-1.28.069-1.687.069-4.947s-.011-3.667-.069-4.947C21.716 2.59 19.41.284 14.947.069 13.667.011 13.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#mission">Missão & Visão</a></li>
+                        <li><a href="#services">Nossos Serviços</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" data-modal-trigger="privacy">Política de Privacidade</a></li>
+                        <li><a href="#" data-modal-trigger="terms">Termos de Uso</a></li>
+                        <li><a href="#" data-modal-trigger="cookies">Política de Cookies</a></li>
+                        <li><a href="#" data-modal-trigger="lgpd">LGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Campinas, SP - Brasil</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M19.043 4.957A9.924 9.924 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.723.44 3.35 1.223 4.785L2 22l5.215-1.223A9.943 9.943 0 0 0 12 22c5.523 0 10-4.477 10-10a9.924 9.924 0 0 0-2.957-7.043zM12 20.134a8.134 8.134 0 0 1-4.208-1.18l-.302-.178-3.132.735.748-3.058-.194-.314A8.134 8.134 0 0 1 3.866 12c0-4.493 3.64-8.134 8.134-8.134s8.134 3.64 8.134 8.134c0 4.493-3.64 8.134-8.134 8.134zm4.545-5.922c-.247-.123-1.464-.723-1.692-.805-.228-.082-.394-.123-.559.123-.165.247-.639.805-.783.971-.144.165-.289.185-.536.062-.247-.123-1.047-.384-1.995-1.23-.738-.66-1.23-1.476-1.374-1.723-.144-.247-.015-.38.11-.502.112-.11.247-.288.37-.432.123-.144.165-.247.247-.412.082-.165.041-.308-.021-.432-.062-.123-.559-1.345-.766-1.845-.198-.48-.406-.412-.559-.42-.144-.008-.308-.008-.474-.008a.88.88 0 0 0-.63.287c-.228.247-.866.845-.866 2.067s.887 2.396 1.01 2.562c.123.165 1.745 2.66 4.254 3.742.587.256 1.05.412 1.416.523.59.176 1.12.155 1.551.093.48-.072 1.464-.598 1.67-1.178.207-.58.207-1.077.144-1.178-.062-.102-.227-.164-.474-.287z"/></svg> <a href="https://wa.me/551931992624" target="_blank">+55 (19) 3199-2624</a></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> <a href="mailto:comercial@nextengine.com.br">comercial@nextengine.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Next Engine. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+    </a>
+    
+    <div id="legal-modal-overlay" class="modal-overlay">
+        <div id="legal-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <h3 id="modal-title">Título do Modal</h3>
+                <button class="modal-close-btn" aria-label="Fechar modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Conteúdo legal será injetado aqui -->
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact-modal-overlay" class="modal-overlay">
+        <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+             <div class="modal-header">
+                <div>
+                    <h3 id="contact-modal-title">Vamos conversar!</h3>
+                    <p class="modal-subtitle">Preencha o formulário e nossa equipe entrará em contato.</p>
+                </div>
+                <button class="modal-close-btn" aria-label="Fechar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Nome Completo</label>
+                        <input type="text" id="contact-name" name="name" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-mail</label>
+                        <input type="email" id="contact-email" name="email" required>
+                         <div class="error-message"></div>
+                    </div>
+                     <div class="form-group">
+                        <label for="contact-phone">Telefone com DDD</label>
+                        <input type="tel" id="contact-phone" name="phone" required maxlength="15">
+                         <div class="error-message"></div>
+                    </div>
+                     <div class="form-group">
+                        <label for="contact-state">Estado</label>
+                        <select id="contact-state" name="state" required>
+                            <option value="" disabled selected>Selecione o estado</option>
+                        </select>
+                         <div class="error-message"></div>
+                    </div>
+                     <div class="form-group">
+                        <label for="contact-city">Cidade</label>
+                        <select id="contact-city" name="city" required disabled>
+                            <option value="">Selecione a cidade</option>
+                        </select>
+                         <div class="error-message"></div>
+                    </div>
+                    <div id="form-status"></div>
+                    <button type="submit" class="btn btn-blue btn-full-width">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container">
+            <div class="cookie-banner-content">
+                <p>Este site utiliza cookies para garantir que você obtenha a melhor experiência. Ao continuar navegando, você concorda com a nossa <a href="#" data-modal-trigger="cookies">Política de Cookies</a>.</p>
+                <div class="cookie-banner-actions">
+                    <button id="cookie-reject" class="btn btn-outline">Rejeitar</button>
+                    <button id="cookie-accept" class="btn btn-primary">Aceitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.tsx"></script>
+
+</body>
+</html>
